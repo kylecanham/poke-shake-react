@@ -33,10 +33,11 @@ export default function HomePage() {
         setLoading(false)}
         catch (err) {
             console.log('error')
+            window.alert("Sorry, you've either made a typo or you've hit the rate limit. Please either check your spelling or try again in an hour.")
+
         }
         finally {
             setLoading(false)
-            window.alert("Sorry, you've either made a typo or you've hit the rate limit. Please either check your spelling or try again in an hour.")
         }
         
     }
